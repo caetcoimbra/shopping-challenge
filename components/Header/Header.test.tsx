@@ -1,8 +1,8 @@
 import { render } from "@testing-library/react";
-import Home from "@/pages/index";
 import { mainTheme } from "../../tests/utils";
+import Header from "@/components/Header/Header";
 
 it("Header and snapshot must be equal", () => {
-  const { container } = render(mainTheme(<Home />));
+  const { container } = render(mainTheme(<Header />));
   expect(container).toMatchSnapshot();
 });
