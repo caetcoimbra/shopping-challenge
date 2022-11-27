@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const Container = styled.ul`
   display: flex;
-  justify-content: center;
-  margin-top: 18px;
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: center;
+  margin: 18px auto 50px auto;
+  max-width: 1200px;
   gap: 18px;
 `;

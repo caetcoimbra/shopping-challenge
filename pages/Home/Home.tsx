@@ -4,6 +4,7 @@ import ProductGrid from "@/components/ProductGrid/ProductGrid";
 import { useCallback, useEffect, useState } from "react";
 import request, { Product } from "../../integrations/request";
 import CartDrawer from "@/components/CartDrawer/CartDrawer";
+import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
   const [products, setProducts] = useState<Product[]>([]);
@@ -56,6 +57,7 @@ export default function Home() {
         <ProductGrid loading={loading} products={products} />
       </main>
       <CartDrawer visible={openCart} onClose={closeDrawer} />
+      <Footer />
     </>
   );
 }

@@ -42,7 +42,7 @@ exports[`should call api on mount 1`] = `
   </header>
   <main>
     <ul
-      class="sc-ksBlkl fWzjHs"
+      class="sc-ksBlkl ivMNau"
     >
       <div
         class="sc-gKPRtg sc-bqWxrE eVqmcG jBuIIz"
@@ -223,5 +223,10 @@ exports[`should call api on mount 1`] = `
       Finalizar Compra
     </button>
   </div>
+  <footer
+    class="sc-iJnaPW dNbMqJ"
+  >
+    MKS Sistemas © Todos os direitos reservados
+  </footer>
 </div>
 `;

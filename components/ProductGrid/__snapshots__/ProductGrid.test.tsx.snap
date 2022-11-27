@@ -3,7 +3,7 @@
 exports[`products must be rendered 1`] = `
 <div>
   <ul
-    class="sc-kDvujY fCsIga"
+    class="sc-kDvujY dGLUKA"
   >
     <li>
       <div
@@ -524,7 +524,7 @@ exports[`products must be rendered 1`] = `
 exports[`skeletons must be rendered 1`] = `
 <div>
   <ul
-    class="sc-kDvujY fCsIga"
+    class="sc-kDvujY dGLUKA"
   >
     <div
       class="sc-gswNZR sc-jrcTuL innFoO biTDni"
