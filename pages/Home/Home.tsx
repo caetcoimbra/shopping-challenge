@@ -4,7 +4,6 @@ import ProductGrid from "@/components/ProductGrid/ProductGrid";
 import { useCallback, useEffect, useState } from "react";
 import request, { Product } from "../../integrations/request";
 import CartDrawer from "@/components/CartDrawer/CartDrawer";
-import { mockProducts } from "../../tests/utils";
 
 export default function Home() {
   const [products, setProducts] = useState<Product[]>([]);
@@ -56,12 +55,7 @@ export default function Home() {
       <main>
         <ProductGrid loading={loading} products={products} />
       </main>
-
-      <CartDrawer
-        products={mockProducts}
-        visible={openCart}
-        onClose={closeDrawer}
-      />
+      <CartDrawer visible={openCart} onClose={closeDrawer} />
     </>
   );
 }

@@ -28,8 +28,8 @@ export const Image = styled.img`
 
 export const RemoveItemButton = styled.button`
   position: absolute;
-  top: -5px;
-  right: -5px;
+  top: 1px;
+  right: 1px;
   border: 0;
   border-radius: 50%;
   width: 18px;

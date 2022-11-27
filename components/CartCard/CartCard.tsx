@@ -1,8 +1,7 @@
-import { Product } from "../../integrations/request";
 import ProductPrice from "@/components/ProductPrice/ProductPrice";
 import CartCounter from "@/components/CartCounter/CartCounter";
 import { Container, ProductName, Image, RemoveItemButton } from "./styles";
-import { useAppDispatch } from "hooks/redux";
+import { useAppDispatch } from "../../hooks/redux";
 import {
   addItem,
   CountedProduct,
@@ -11,11 +10,11 @@ import {
 } from "../../store/store";
 import { ImCross } from "react-icons/im";
 
-export interface CarCardProps {
+export interface CartCardProps {
   product: CountedProduct;
 }
 
-const CartCard = ({ product }: CarCardProps) => {
+const CartCard = ({ product }: CartCardProps) => {
   const dispatch = useAppDispatch();
 
   const decrement = () => {

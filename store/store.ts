@@ -1,5 +1,4 @@
 import { configureStore, PayloadAction } from "@reduxjs/toolkit";
-
 import { createSlice } from "@reduxjs/toolkit";
 import { Product } from "../integrations/request";
 

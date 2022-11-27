@@ -2,6 +2,12 @@ import React from "react";
 import { ThemeProvider } from "styled-components";
 import { theme } from "../theme";
 import { Product } from "../integrations/request";
+import { Provider } from "react-redux";
+import store from "../store/store";
+
+export const mainStore = (Component: JSX.Element) => {
+  return <Provider store={store}>{Component}</Provider>;
+};
 
 export const mainTheme = (Component: JSX.Element) => {
   return <ThemeProvider theme={theme}>{Component}</ThemeProvider>;
