@@ -23,9 +23,10 @@ exports[`products must be rendered 1`] = `
             Iphone 11 128 GB
           </h1>
           <span
-            class="sc-bcXHqe WLfWX"
+            class="sc-bcXHqe eWcSnT"
+            style="height: 30px;"
           >
-            R$ 5.000,00
+            R$ 5.000
           </span>
         </div>
         <p
@@ -86,9 +87,10 @@ exports[`products must be rendered 1`] = `
             AirPods
           </h1>
           <span
-            class="sc-bcXHqe WLfWX"
+            class="sc-bcXHqe eWcSnT"
+            style="height: 30px;"
           >
-            R$ 1.200,00
+            R$ 1.200
           </span>
         </div>
         <p
@@ -149,9 +151,10 @@ exports[`products must be rendered 1`] = `
             Macbook Air
           </h1>
           <span
-            class="sc-bcXHqe WLfWX"
+            class="sc-bcXHqe eWcSnT"
+            style="height: 30px;"
           >
-            R$ 8.200,00
+            R$ 8.200
           </span>
         </div>
         <p
@@ -212,9 +215,10 @@ exports[`products must be rendered 1`] = `
             iPhone 12 64 GB
           </h1>
           <span
-            class="sc-bcXHqe WLfWX"
+            class="sc-bcXHqe eWcSnT"
+            style="height: 30px;"
           >
-            R$ 6.500,00
+            R$ 6.500
           </span>
         </div>
         <p
@@ -275,9 +279,10 @@ exports[`products must be rendered 1`] = `
             Apple Watch Series 7
           </h1>
           <span
-            class="sc-bcXHqe WLfWX"
+            class="sc-bcXHqe eWcSnT"
+            style="height: 30px;"
           >
-            R$ 3.200,00
+            R$ 3.200
           </span>
         </div>
         <p
@@ -338,9 +343,10 @@ exports[`products must be rendered 1`] = `
             iPad
           </h1>
           <span
-            class="sc-bcXHqe WLfWX"
+            class="sc-bcXHqe eWcSnT"
+            style="height: 30px;"
           >
-            R$ 4.200,00
+            R$ 4.200
           </span>
         </div>
         <p
@@ -401,9 +407,10 @@ exports[`products must be rendered 1`] = `
             Headset Cloud Revolver
           </h1>
           <span
-            class="sc-bcXHqe WLfWX"
+            class="sc-bcXHqe eWcSnT"
+            style="height: 30px;"
           >
-            R$ 1.000,00
+            R$ 1.000
           </span>
         </div>
         <p
@@ -464,9 +471,10 @@ exports[`products must be rendered 1`] = `
             Headset Cloud Stinger
           </h1>
           <span
-            class="sc-bcXHqe WLfWX"
+            class="sc-bcXHqe eWcSnT"
+            style="height: 30px;"
           >
-            R$ 600,00
+            R$ 600
           </span>
         </div>
         <p

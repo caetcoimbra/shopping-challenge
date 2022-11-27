@@ -1,13 +1,14 @@
 import { Container } from "./styles";
+import { CSSProperties } from "react";
+import { formatBrlCurrency } from "../../utils";
+
 export interface ProductPriceProps {
   price: number;
+  style?: CSSProperties;
 }
 
-const formatBrlCurrency = (value: number) =>
-  value.toLocaleString("pt-br", { style: "currency", currency: "BRL" });
-
-const ProductPrice = ({ price }: ProductPriceProps) => {
-  return <Container>{formatBrlCurrency(price)}</Container>;
+const ProductPrice = ({ price, style }: ProductPriceProps) => {
+  return <Container style={style}>{formatBrlCurrency(price)}</Container>;
 };
 
 export default ProductPrice;

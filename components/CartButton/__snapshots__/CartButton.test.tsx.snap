@@ -2,8 +2,8 @@
 
 exports[`CartButton and snapshot must be equal 1`] = `
 <div>
-  <div
-    class="sc-bcXHqe jGPMOA"
+  <button
+    class="sc-bcXHqe hdUMJr"
   >
     <svg
       fill="currentColor"
@@ -23,6 +23,6 @@ exports[`CartButton and snapshot must be equal 1`] = `
     >
       0
     </span>
-  </div>
+  </button>
 </div>
 `;

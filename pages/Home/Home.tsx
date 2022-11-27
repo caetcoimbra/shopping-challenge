@@ -3,10 +3,21 @@ import Header from "@/components/Header/Header";
 import ProductGrid from "@/components/ProductGrid/ProductGrid";
 import { useCallback, useEffect, useState } from "react";
 import request, { Product } from "../../integrations/request";
+import CartDrawer from "@/components/CartDrawer/CartDrawer";
+import { mockProducts } from "../../tests/utils";
 
 export default function Home() {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
+  const [openCart, setOpenCart] = useState(false);
+
+  const openDrawer = () => {
+    setOpenCart(true);
+  };
+
+  const closeDrawer = () => {
+    setOpenCart(false);
+  };
 
   const fetchProducts = useCallback(async () => {
     setLoading(true);
@@ -40,11 +51,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
+      <Header onCart={openDrawer} />
 
       <main>
         <ProductGrid loading={loading} products={products} />
       </main>
+
+      <CartDrawer
+        products={mockProducts}
+        visible={openCart}
+        onClose={closeDrawer}
+      />
     </>
   );
 }

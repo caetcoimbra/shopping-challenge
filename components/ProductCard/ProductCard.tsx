@@ -1,4 +1,7 @@
 import ProductPrice from "@/components/ProductPrice/ProductPrice";
+import { addItem } from "../../store/store";
+import { useAppDispatch } from "../../hooks/redux";
+
 import {
   Container,
   ProductImage,
@@ -23,20 +26,24 @@ export interface Product {
   updatedAt: string;
 }
 
-const ProductCard = (props: Product) => (
-  <Container>
-    <ProductImage src={props.photo} alt={props.name} />
-    <ProductDetail>
-      <ProductName>{props.name}</ProductName>
-      <ProductPrice price={+props.price} />
-    </ProductDetail>
-    <ProductDescription>{props.description}</ProductDescription>
-    <div style={{ flex: 1 }}></div>
-    <AddToCartButton>
-      <BagIcon /> Comprar
-    </AddToCartButton>
-  </Container>
-);
+const ProductCard = (product: Product) => {
+  const dispatch = useAppDispatch();
+
+  return (
+    <Container>
+      <ProductImage src={product.photo} alt={product.name} />
+      <ProductDetail>
+        <ProductName>{product.name}</ProductName>
+        <ProductPrice style={{ height: 30 }} price={+product.price} />
+      </ProductDetail>
+      <ProductDescription>{product.description}</ProductDescription>
+      <div style={{ flex: 1 }}></div>
+      <AddToCartButton onClick={() => dispatch(addItem(product))}>
+        <BagIcon /> Comprar
+      </AddToCartButton>
+    </Container>
+  );
+};
 
 const CardSkeleton = () => {
   return (

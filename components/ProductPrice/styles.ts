@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.span`
-  display: inline-block;
+  display: flex;
+  align-items: center;
   width: fit-content;
-  height: fit-content;
+  box-sizing: border-box;
   border-radius: 5px;
   background-color: #373737;
   color: #fff;

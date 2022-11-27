@@ -1,11 +1,18 @@
 import { FaShoppingCart } from "react-icons/fa";
 import { Container, Counter } from "./styles";
+import { useAppSelector } from "../../hooks/redux";
+import { selectProductsCount } from "../../store/store";
 
-const CartButton = () => {
+export interface CartButtonProps {
+  onClick?: () => void;
+}
+
+const CartButton = ({ onClick }: CartButtonProps) => {
+  const cartProductsCount = useAppSelector(selectProductsCount);
   return (
-    <Container>
+    <Container onClick={onClick}>
       <FaShoppingCart />
-      <Counter>0</Counter>
+      <Counter>{cartProductsCount}</Counter>
     </Container>
   );
 };

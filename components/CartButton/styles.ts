@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.button`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -8,6 +8,7 @@ export const Container = styled.div`
   background-color: #fff;
   width: 52px;
   height: 26px;
+  border: 0;
 `;
 
 export const Counter = styled.span`

@@ -17,8 +17,8 @@ exports[`Header and snapshot must be equal 1`] = `
         Sistemas
       </h2>
     </div>
-    <div
-      class="sc-hLBbgP kBaVEK"
+    <button
+      class="sc-hLBbgP kuToSR"
     >
       <svg
         fill="currentColor"
@@ -38,7 +38,7 @@ exports[`Header and snapshot must be equal 1`] = `
       >
         0
       </span>
-    </div>
+    </button>
   </header>
 </div>
 `;
