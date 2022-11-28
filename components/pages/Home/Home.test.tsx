@@ -1,7 +1,7 @@
 import { render, waitFor } from "@testing-library/react";
-import { mockProducts, mainTheme, mainStore } from "../../tests/utils";
+import { mockProducts, mainTheme, mainStore } from "../../../tests/utils";
 import Home from "../../pages/Home/Home";
-import Request from "../../integrations/request";
+import Request from "../../../integrations/request";
 
 it("should call api on mount", async () => {
   Request.fetchProducts = jest

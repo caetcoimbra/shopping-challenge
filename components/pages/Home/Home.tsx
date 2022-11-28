@@ -2,7 +2,7 @@ import Head from "next/head";
 import Header from "@/components/Header/Header";
 import ProductGrid from "@/components/ProductGrid/ProductGrid";
 import { useCallback, useEffect, useState } from "react";
-import request, { Product } from "../../integrations/request";
+import request, { Product } from "../../../integrations/request";
 import CartDrawer from "@/components/CartDrawer/CartDrawer";
 import Footer from "@/components/Footer/Footer";
 
