@@ -1,29 +1,38 @@
-# Next.js + Jest
+Diretrizes do desafio
+===========================
 
-This example shows how to configure Jest to work with Next.js.
+O objetivo principal desse teste é avaliar a capacidade de escrever código limpo, bem testado e reutilizável.
 
-This includes Next.js' built-in support for Global CSS, CSS Modules and TypeScript.
+Tarefa (funcional)
+---------------
 
-## How to Use
+Para esse desafio, foi consumida a [API REST de produtos](https://mks-frontend-challenge-api.herokuapp.com/api-docs/) da MKS Sistemas para exibir a lista de produtos da loja.
 
-Quickly get started using [Create Next App](https://github.com/vercel/next.js/tree/canary/packages/create-next-app#readme)!
+A aplicação contém  apenas uma página/rota e um carrinho.
 
-In your terminal, run the following command:
+- <b>Loja</b>: A lista de produtos é buscada de nossa API, exibindo um shimmer/skeleton enquanto estiver em loading.
+ 
+- <b>Carrinho</b>: O carrinho exibe todos os produtos selecionados, juntamente com a opção de aumentar a quantidade de cada produto selecionado ou remover cada um deles do carrinho.
 
-```bash
-npx create-next-app --example with-jest with-jest-app
-```
+Utilizei Jest e a testing-library para realizar os testes unitários.
 
-```bash
-yarn create next-app --example with-jest with-jest-app
-```
+Recursos
+---------------
 
-```bash
-pnpm create next-app --example with-jest with-jest-app
-```
+UI/UX: [Figma loja](https://www.figma.com/file/Z4z8osDbK1ET7cjNzFRMrK/MKS-Front-end-challenge?node-id=0%3A1) PS: O design system está incluso, incluindo a fonte.
 
-## Run Jest Tests
+API: [API REST de produtos](https://mks-frontend-challenge-api.herokuapp.com/api-docs/) para exibir a lista de produtos da loja.
 
-```bash
-npm test
-```
+Ferramentas utilizadas
+---------------
+
+1. TypeScript
+2. Next.js
+3. Redux toolkit
+4. Styled-components
+5. Jest
+6. Vercel
+
+Deploy
+---------------
+A aplicação pode ser acessada através deste [link](https://shopping-challenge.vercel.app/). Seu deploy foi realizado utilizando o Vercel.
