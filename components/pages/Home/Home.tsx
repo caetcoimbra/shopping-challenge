@@ -47,7 +47,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>MKS Sistemas | E-commerce</title>
+        <title>MKS E-Commerce</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
